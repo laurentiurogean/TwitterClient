@@ -95,6 +95,7 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
         picker.dismiss(animated: true) {
             DispatchQueue.main.async {
                 self.profileImage.image = chosenImage
+                self.profileImage.contentMode = UIViewContentMode.scaleAspectFit
             }
         }
     }
