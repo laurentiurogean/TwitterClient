@@ -164,6 +164,8 @@ class TwitterClient: NSObject {
                 if connectionError != nil {
                     print("Error: \(String(describing: connectionError))")
                 }
+                
+                self.accountSettings()
             }
         }
     }
